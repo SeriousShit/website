@@ -43,7 +43,7 @@ services:
             GIT_SYNC_DEST: /src 
             GIT_SYNC_BRANCH: master
             GIT_SYNC_REV: "FETCH_HEAD" 
-            GIT_SYNC_WAIT: 10 
+            GIT_SYNC_WAIT: 3600
 
         volumes:
             - website_sources:/src
