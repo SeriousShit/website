@@ -1,5 +1,5 @@
 title = "Serious Shit"
-baseURL = "https://tomanistor.com"
+baseURL = "http://v22017125338957481.megasrv.de:8080/"
 tags = ["portfolio", "web design", "blog"]
 languageCode = "en-US"
 config = "config.toml"
