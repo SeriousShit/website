@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+    <head>
+        <title>
+        {{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "" }}
+        {{ if .IsHome }}
+        {{ .Site.Title }}
+        {{ else if .Params.heading }}
+        {{ .Params.heading }}
+        {{ else }}
+        {{ .Site.Title }} | {{ .Title }}
+        {{ end }}
+        </title>
+        <meta name="title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else if .Params.heading }}{{ .Params.heading }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end}}">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="chrome=1">
+        <meta name="HandheldFriendly" content="True">
+        <meta name="MobileOptimized" content="320">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="referrer" content="no-referrer-when-downgrade">
+        <meta name="generator" content="{{ .Hugo.Generator }}">
+        <base href="{{ .Site.BaseURL }}">
+        {{ if .Description }}<meta name="description" content="{{ .Description }}">
+        {{ else if .Site.Params.description }}<meta name="description" content="{{ .Site.Params.description }}">
+        {{ else if .Summary }}<meta name="description" content="{{ .Summary }}">{{ end }}
+        {{ if .Site.Params.author }}<meta name="author" content="{{ .Site.Params.author }}">{{ end }}
+        <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else if .Params.heading }}{{ .Params.heading }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="{{ .Site.BaseURL }}">
+        {{ if .Description }}<meta name="og:description" content="{{ .Description }}">
+        {{ else if .Site.Params.description }}<meta property="og:description" content="{{ .Site.Params.description}}">
+        {{ else if .Summary }}<meta name="og:description" content="{{ .Summary }}">{{ end }}
+        {{ if .Site.Params.favicon }}
+        <link rel="icon" type="image/png" sizes="16x16" href="/images/logo/favicon.ico">
+        {{ end }}
+        <link rel="canonical" href="{{ .Permalink }}">
+        {{ if .RSSLink }}
+        <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}">
+        {{ end }}
+        <link rel="stylesheet" href="{{ .Site.BaseURL }}/styles/main.css" type="text/css">
+        <link rel="stylesheet" href="{{ .Site.BaseURL }}/styles/w3.css" type="text/css">
+    </head>
+
+    <body class="w3-light-grey w3-content" style="max-width:1600px">
+        <!-- Sidebar/menu -->
+        <nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar">
+
+            <div class="w3-padding-64 w3-center">
+                <h2>{{ .Site.Title }}</h2>
+                <h4>{{ .Site.Params.tagline }}</h4>
+            </div>
+            
+            <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
+
+            {{ range .Site.Menus.main }}
+                <a href="{{ .URL }}" onclick="w3_close()" class="w3-bar-item w3-button">
+                    {{ .Name }}
+                </a>
+            {{ end }}
+
+        </nav>
+
+        <!-- Top menu on small screens -->
+        <header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+            <span class="w3-left w3-padding">{{ .Site.Title }}</span>
+            <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">
+                &#9776;
+            </a>
+        </header>
+
+        <!-- Overlay effect when opening sidebar on small screens -->
+        <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+        <main class="w3-main" style="margin-left:300px">
+            <!-- Push down content on small screens --> 
+            <div class="w3-hide-large" style="margin-top:83px"></div>
+

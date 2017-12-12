@@ -1,0 +1,92 @@
+<footer class="w3-container w3-padding-32 w3-grey">
+    <div class="w3-row-padding">
+        <div class="w3-third">
+            <h3>INFO</h3>
+            <p>{{ .Site.Params.footerInfo }}</p>
+        </div>
+        
+        <!-- <div class="w3-twothird">
+            <h3>BLOG POSTS</h3>
+                <ul class="w3-ul">
+                    {{ range first 2 (where .Data.Pages "Section" "blog") }}
+                        <li class="w3-padding-16 w3-hover-black">
+                            <span class="w3-large"><a href="{{ .Permalink }}">{{ .Title }}</a></span><br>
+                            <span>{{ .Date.Format (.Site.Params.dateform | default "January 2006") }} · {{  .ReadingTime }} minute read</span>
+                        </li>
+                    {{ end }}
+                </ul>
+        
+        </div>
+        <div class="w3-third">
+            <h3>POPULAR TAGS</h3>
+            <p>
+                <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">London</span>
+                <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">IKEA</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">NORWAY</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">DIY</span>
+                <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Baby</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Family</span>
+                <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Shopping</span>
+                <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Games</span>
+            </p>
+        </div> -->
+    </div>
+</footer>
+</main>
+<script>
+// Script to open and close sidebar
+function w3_open() {
+document.getElementById("mySidebar").style.display = "block";
+document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+document.getElementById("mySidebar").style.display = "none";
+document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+document.getElementById("img01").src = element.src;
+document.getElementById("modal01").style.display = "block";
+var captionText = document.getElementById("caption");
+captionText.innerHTML = element.alt;
+}
+</script>
+<!-- Formspree AJAX -->
+<script>
+$("#form-contact").on("submit", function(e) {
+e.preventDefault();
+// Store form field values
+var name = $("input[name=name]").val();
+var email = $("input[name=email").val();
+var subject = $("input[name=_subject").val();
+var message = $("textarea[name=message]").val();
+// Send to Formspree
+$.ajax({
+url:"https://formspree.io/{{ .Site.Params.email }}",
+method:"POST",
+data:{
+name:name,
+_replyto:email,
+email:email,
+_subject:subject,
+message:message,
+},
+dataType:"json",
+success:function() {
+console.log("Form successfully sent");
+// Reset form
+$("#form-contact").get(0).reset();
+// Fade out submit button, fade in thank you message,
+// then fade out message and fade in submit button
+$("#form-submit").fadeOut(function(){
+$("#form-thankyou").fadeIn(function(){
+$("#form-thankyou").delay(4000).fadeOut(function(){
+$("#form-submit").fadeIn();
+});
+});
+});
+}
+});
+});
+</script>
+</body>
+</html>
