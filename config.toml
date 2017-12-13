@@ -9,6 +9,7 @@ googleAnalytics = ""
 disqusShortname = "tomanistor"
 disableKinds = ["taxonomy", "taxonomyTerm"] # This theme does not currently use "tag" and "category" taxonomies
 
+
 [Params]
     tagline = "because i love this shit"
     author = "Hagen Hasenbalg"
@@ -30,14 +31,15 @@ disableKinds = ["taxonomy", "taxonomyTerm"] # This theme does not currently use 
     cacheBustCSS = false
     cacheBustJS = false
     ajaxFormspree = true
+    dateform = "02.01.2006"
 
+[[menu.main]]
+    name = "Portflolio"
+    url  = "/#portfolio"
+    weight = 1
 [[menu.main]]
     name = "About"
     url  = "/#about"
-    weight = 1
-[[menu.main]]
-    name = "Work"
-    url  = "/#work"
     weight = 2
 [[menu.main]]
     name = "Blog"

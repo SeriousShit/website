@@ -1,0 +1,46 @@
+<section class="portfolio" id="portfolio">
+   <!-- <div class="w3-container w3-light-grey   w3-padding-32" id="portfolio">
+      <div class="w3-content" style="max-width:600px">
+         <h3 class="w3-wide">Portfolio</h3>
+      </div>
+    </div> -->
+
+
+<div class="grid">
+    {{ range (where .Data.Pages "Section" "portfolio") }}
+        <div class="w3-third  masonry-item">
+         
+            <div class="box-masonry" style="padding: 10px">
+                <div class="w3-card">
+
+                    {{ if and (isset .Params "image") .Params.image }}
+                        <a href="{{ .Permalink }}" title="" class="">
+                            <img src="{{ .Params.image }}" alt="" style="width:100%">
+                        </a>
+                    {{ end }}
+                    <div class="w3-container">
+                        <h5 class="w3-wide">
+                            <a href="{{ .Permalink }}">{{ .Title }}</a>
+                        </h5>
+                        {{ .Date.Format (.Site.Params.dateform | default "January 2006") }}
+                         <p>{{ .Summary }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {{ end }}
+</section>
+    <script type="text/javascript">
+    
+        /* =========================================
+        *   masonry
+        *   =======================================*/
+        masonry();
+        function masonry() {
+            var grid = document.querySelector('.grid');
+
+            var msnry = new Masonry( grid, {
+                itemSelector: '.masonry-item',
+            });
+        }
+    </script>
