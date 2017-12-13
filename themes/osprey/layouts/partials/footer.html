@@ -1,9 +1,11 @@
 <footer class="w3-container w3-padding-32 w3-dark-grey">
     <div class="serious-content w3-content w3-justify">
-        <h3 class="w3-wide">INFO</h3>
+        <!-- <h3 class="w3-wide">INFO</h3> -->
 
-        <div class="w3-half">
-            <p>{{ .Site.Params.footerInfo }}</p>
+        <div class="">
+            {{ with .Site.Params.copyright }}
+          		{{ . | safeHTML }}
+        	{{ end }}
         </div>
         
     </div>

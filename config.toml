@@ -13,8 +13,7 @@ disableKinds = ["taxonomy", "taxonomyTerm"] # This theme does not currently use 
 [Params]
     tagline = "because i love this shit"
     author = "Hagen Hasenbalg"
-    description = "Full-stack web developer and UI/UX enthusiast based in San Diego, CA."
-    footerInfo = "Full-stack web developer and UI/UX enthusiast based in San Diego, CA."
+    copyright = "&copy;2017 Hagen Hasenbalg"
     logoBig = "/images/osprey-logo.png"
     logoSmall = "/images/osprey-logo.png"
     favicon = "favicon.ico"
@@ -25,7 +24,6 @@ disableKinds = ["taxonomy", "taxonomyTerm"] # This theme does not currently use 
     email = ""
     googleTagManger = ""
     highlightJS = true
-    copyright = true
     credit = true
     customCSS = false
     cacheBustCSS = false
