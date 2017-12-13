@@ -52,3 +52,7 @@ pre code {
 a:link {
     text-decoration: none;
 }
+
+.about img {
+  width: 100%
+}
