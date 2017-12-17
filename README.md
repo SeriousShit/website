@@ -1,8 +1,11 @@
 # website
 
-
-## Deploy with docker stack
-
+##test
 ```
-docker stack deploy -c docker-compose.yml website
+hugo server -D 
+```
+
+##build static hmtl
+```
+hugo
 ```
