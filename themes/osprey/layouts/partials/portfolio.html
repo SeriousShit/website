@@ -1,5 +1,5 @@
 <section class="portfolio" id="portfolio">
-<div class="grid" onload="masonry()">
+<div class="grid" >
     {{ range (where .Data.Pages "Section" "portfolio") }}
         <div class="w3-third  masonry-item">
          
@@ -24,15 +24,3 @@
     {{ end }}
 </section>
 
-<script type="text/javascript">
-
-    /* =========================================
-    *   masonry
-    *   =======================================*/
-    function masonry() {
-        var grid = document.querySelector('.grid');
-        var msnry = new Masonry( grid, {
-            itemSelector: '.masonry-item',
-        });
-    }
-</script>
