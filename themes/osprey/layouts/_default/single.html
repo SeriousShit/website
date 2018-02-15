@@ -15,10 +15,10 @@
             </article>
             <div class="pagination">
                 {{ if .PrevInSection }}
-                <a href="{{ .PrevInSection.Permalink }}">&laquo; {{ .PrevInSection.Title }}</a>
+                <a href="{{ .PrevInSection.Permalink }}">← {{ .PrevInSection.Title }}</a>
                 {{ end }}
                 {{ if .NextInSection }}
-                <a href="{{ .NextInSection.Permalink }}">{{ .NextInSection.Title }} &raquo;</a>
+                <a href="{{ .NextInSection.Permalink }}">{{ .NextInSection.Title }} →</a>
                 {{ end }}
             </div>
 
