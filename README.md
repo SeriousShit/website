@@ -1,11 +1,11 @@
 # website
 
-##test
+## test
 ```
 hugo server -D 
 ```
 
-##build static hmtl
+## build static hmtl
 ```
 hugo
 ```
