@@ -64,7 +64,7 @@
         <!-- Sidebar/menu -->
         <nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;" id="mySidebar">
 
-            <div class="w3-padding-64 w3-center">
+            <div class="ddd w3-padding-64 w3-center">
                 <h2 class="w3-wide">{{ .Site.Title }}</h2>
                 <h4>{{ .Site.Params.tagline }}</h4> 
             </div>
@@ -83,7 +83,7 @@
 
         <!-- Top menu on small screens -->
         <header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16" style="opacity: 0.95;">
-            <span class="w3-left w3-padding w3-wide">{{ .Site.Title }}</span>
+            <span class="w3-left w3-padding w3-wide ddd"><h2>{{ .Site.Title }}</h2></span>
             <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">
                 &#9776;
             </a>
