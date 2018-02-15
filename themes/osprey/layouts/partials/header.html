@@ -84,7 +84,11 @@
 
         <!-- Top menu on small screens -->
         <header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16" style="opacity: 0.95;">
-            <span class="w3-left w3-padding w3-wide ddd"><h2>{{ .Site.Title }}</h2></span>
+            <span class="w3-left w3-padding w3-wide ddd">
+                <a href="/">
+                    <h2>{{ .Site.Title }}</h2>
+                </a>
+            </span>
             <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">
                 &#9776;
             </a>
