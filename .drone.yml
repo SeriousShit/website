@@ -9,7 +9,5 @@ pipeline:
   rebuild-cache:
     image: drillster/drone-volume-cache
     rebuild: true
-    mount:
-      - output
     volumes:
       - website_static_files:/output
