@@ -12,7 +12,7 @@ pipeline:
     commands:
       - ls
       - pwd
-      - cp -a /output/. /out/
+      - cp -a output/. out/
     volumes:
       - website_static_files:/out
 
