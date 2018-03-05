@@ -4,11 +4,14 @@ pipeline:
     image: cbrgm/drone-hugo:latest
     validate: true
     output: output
-    commands:
-      - ls 
-      - pwd 
     when:
       event: push
+
+  test:
+    image: alpine
+    commands:
+      - ls
+      - pwd
 
   rebuild-cache:
     image: drillster/drone-volume-cache
