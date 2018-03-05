@@ -6,7 +6,6 @@ pipeline:
   hugo:
     image: cbrgm/drone-hugo:latest
     validate: true
-    output: /output
     volumes:
       - website_static_files:/output
     when:
