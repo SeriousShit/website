@@ -1,3 +1,6 @@
+volumes:
+  website_static_files:
+    external: true
 
 pipeline:
   hugo:
