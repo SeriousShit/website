@@ -9,3 +9,5 @@ pipeline:
     output: /output
     volumes:
       - website_static_files:/output
+    when:
+      event: push
