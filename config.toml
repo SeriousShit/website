@@ -11,7 +11,7 @@ disableKinds = ["taxonomy", "taxonomyTerm"] # This theme does not currently use 
 
 
 [Params]
-    tagline = "because i love this shit"
+    tagline = "because i love this shit?"
     author = "Hagen Hasenbalg"
     copyright = "Hagen Hasenbalg"
     favicon = "favicon.ico"
