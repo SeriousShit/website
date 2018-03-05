@@ -1,12 +1,15 @@
-volumes:
-    website_static_files:
-      external: true
 
 pipeline:
   hugo:
     image: cbrgm/drone-hugo:latest
     validate: true
-    volumes:
-      - website_static_files:/output
     when:
       event: push
+
+rebuild-cache:
+    image: drillster/drone-volume-cache
+    rebuild: true
+    mount:
+      - output
+    volumes:
+      - website_static_files:/cache
