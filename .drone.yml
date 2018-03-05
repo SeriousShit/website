@@ -4,6 +4,9 @@ pipeline:
     image: cbrgm/drone-hugo:latest
     validate: true
     output: output
+    commands:
+      - ls 
+      - pwd 
     when:
       event: push
 
