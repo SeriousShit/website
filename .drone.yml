@@ -3,11 +3,14 @@ pipeline:
   hugo:
     image: cbrgm/drone-hugo:latest
     validate: true
+    output: output
     when:
       event: push
 
   rebuild-cache:
     image: drillster/drone-volume-cache
     rebuild: true
+    mount:
+      - output
     volumes:
       - website_static_files:/output
