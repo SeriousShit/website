@@ -13,3 +13,6 @@ rebuild-cache:
       - output
     volumes:
       - website_static_files:/output
+    commands:
+      - ls
+      - pwd
