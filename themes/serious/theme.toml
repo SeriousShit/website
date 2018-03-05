@@ -1,0 +1,12 @@
+name = "Serious"
+license = "GNU3.0"
+licenselink = "https://github.com/tomanistor/osprey/blob/master/LICENSE.md"
+description = "Clean, responsive one-page portfolio"
+homepage = "https://hagen-hasenbalg.de"
+tags = ["blog", "portfolio", "gallery", "minimalist", "responsive"]
+features = ["blog", "portfolio"]
+min_version = 0.24.1
+
+[author]
+    name = "Hagen Hasenbalg"
+    homepage = "https://hagen-hasenbalg.de"

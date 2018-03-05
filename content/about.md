@@ -4,7 +4,7 @@ date = "2017-06-27T17:39:21-07:00"
 draft = false
 +++
 
-<img src="/images/DSCF5604.JPG" alt="Me" class="w3-image w3-padding-32">
+<img src="/images/DSCF5604bw.JPG" alt="Me" class="w3-image w3-padding-32">
 
 
 ### My Name

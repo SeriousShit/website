@@ -4,7 +4,7 @@
 
         <div class="">
             {{ with .Site.Params.copyright }}
-          		{{ . | safeHTML }}
+          		&copy;{{ dateFormat "2006" now }} {{ . | safeHTML }}
         	{{ end }}
         </div>
         
