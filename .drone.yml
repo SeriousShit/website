@@ -6,7 +6,7 @@ pipeline:
     when:
       event: push
 
-rebuild-cache:
+  rebuild-cache:
     image: drillster/drone-volume-cache
     rebuild: true
     mount:
