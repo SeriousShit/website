@@ -13,6 +13,8 @@ pipeline:
       - ls
       - pwd
       - cp -a output/. out/
+      - cd out
+      - ls
     volumes:
       - website_static_files:/out
 
