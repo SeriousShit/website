@@ -76,7 +76,7 @@
 
             {{ range .Site.Menus.main }}
                 <a href="{{ .URL }}" onclick="w3_close()" class="w3-bar-item w3-button">
-                    {{ .Name }}
+                    {{ i18n .Name }}
                 </a>
             {{ end }}
 
@@ -100,8 +100,14 @@
                 </svg>
             </a>
             {{ end}}
+            </br>
+            </br>
+            
+            {{ partial "i18nlist.html" . }}
 
-
+            <div class="i18n">
+                <a href="">de</a> | <a href="">en</a>
+            </div>
         </nav>
 
         <!-- Top menu on small screens -->

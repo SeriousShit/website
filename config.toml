@@ -1,17 +1,21 @@
 title = "Serious Shit"
-baseURL = "http://v22017125338957481.megasrv.de:8080/"
+baseURL = "hagen-hasenbalg.de"
 tags = ["portfolio", "web design", "blog"]
 languageCode = "en-US"
 config = "config.toml"
 theme = "serious"
-canonifyURLS = true
-googleAnalytics = ""
 disqusShortname = ""
-disableKinds = ["taxonomy", "taxonomyTerm"] # This theme does not currently use "tag" and "category" taxonomies
+
+[languages]
+[languages.en]
+weight = 1
+
+[languages.de]
+weight = 2
 
 
 [Params]
-    tagline = "because i love this shit?"
+    tagline = "because i love this shit"
     author = "Hagen Hasenbalg"
     copyright = "Hagen Hasenbalg"
     favicon = "favicon.ico"
@@ -31,18 +35,19 @@ disableKinds = ["taxonomy", "taxonomyTerm"] # This theme does not currently use 
     dateform = "02.01.2006"
 
 [[menu.main]]
-    name = "Portflolio"
+    name = "portfolio"
     url  = "/#portfolio"
     weight = 1
 [[menu.main]]
-    name = "About"
+    name = "about"
     url  = "/#about"
     weight = 2
 [[menu.main]]
-    name = "Blog"
+    name = "blog"
     url  = "/#blog"
     weight = 3
 [[menu.main]]
-    name = "Contact"
+    name = "contact"
     url  = "/#contact"
     weight = 4
+

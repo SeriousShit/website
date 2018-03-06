@@ -18,3 +18,20 @@ Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lo
 mail: example@example.com
 
 tel: 5353 35531
+
+<hr class="w3-opacity">
+        <h4 class="w3-padding-16">Technical Skills</h4>
+        <p class="w3-wide">Swift</p>
+        <div class="w3-white">
+            <div class="w3-container w3-padding-small w3-center w3-grey" style="width:90%">90%</div>
+        </div>
+        <p class="w3-wide">Web Design</p>
+        <div class="w3-white">
+            <div class="w3-container w3-padding-small w3-center w3-grey" style="width:65%">65%</div>
+        </div>
+        <p class="w3-wide">Docker</p>
+        <div class="w3-white">
+            <div class="w3-container w3-padding-small w3-center w3-grey" style="width:70%">70%</div>
+        </div>
+        <p><button class="w3-button w3-light-grey w3-padding-large w3-margin-top w3-margin-bottom">Download Resume</button></p>
+        <hr class="w3-opacity">
