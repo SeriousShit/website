@@ -66,7 +66,10 @@
 
             <div class="ddd w3-padding-64 w3-center">
 
-                <a href="/"><h2 class="w3-wide">{{ .Site.Title }}</h2></a>
+                <a href="{{ .Site.BaseURL }}{{ .Lang }}">
+                    <h2 class="w3-wide">{{ .Site.Title }}</h2>
+                </a>
+
                 <h4>{{ .Site.Params.tagline }}</h4> 
             </div>
             
@@ -75,11 +78,10 @@
             </a>
 
             {{ range .Site.Menus.main }}
-                <a href="{{ .URL }}" onclick="w3_close()" class="w3-bar-item w3-button">
+                <a href="{{ .URL | relLangURL }}" onclick="w3_close()" class="w3-bar-item w3-button">
                     {{ i18n .Name }}
                 </a>
             {{ end }}
-
 
             </br>
             </br>
@@ -102,12 +104,9 @@
             {{ end}}
             </br>
             </br>
-            
+
             {{ partial "i18nlist.html" . }}
 
-            <div class="i18n">
-                <a href="">de</a> | <a href="">en</a>
-            </div>
         </nav>
 
         <!-- Top menu on small screens -->

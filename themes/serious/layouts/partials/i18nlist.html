@@ -1,5 +1,15 @@
-{{ .Translations }}
+<!-- {{ range .Translations }}
 <li>
     <a href="{{ .Permalink }}">{{ .Lang }}</a>
 </li>
-{{ end }}
+{{ end }} -->
+
+<div class="i18n">
+
+	{{ range .Translations }}
+	<span>
+		<a href="{{ .Permalink }}">{{ .Lang }}</a> 
+	</span>
+	{{ end }}
+</ul>
+

@@ -2,21 +2,21 @@
 
     <div class="w3-container w3-grey w3-padding-32 w3-padding-large" id="contact">
         <div class="w3-container w3-card-4 w3-white serious-content w3-content">
-          <h3 class="w3-wide">Contact Me</h3>
+          <h3 class="w3-wide">{{ i18n "contact_me"}}</h3>
             <form class="" action="https://formspree.io/{{ .Site.Params.email }}" method="POST">
             <div class="w3-section">
-              <label>Name</label>
+              <label>{{ i18n "contact_name"}}</label>
               <input class="w3-input w3-border" type="text" name="Name" required="">
             </div>
             <div class="w3-section">
-              <label>Email</label>
+              <label>{{ i18n "contact_email"}}</label>
               <input class="w3-input w3-border" type="text" name="Email" required="">
             </div>
             <div class="w3-section">
-              <label>Message</label>
+              <label>{{ i18n "contact_massage"}}</label>
               <textarea class="w3-input w3-border" type="text" name="Message" required="" style="resize:none"></textarea>
             </div>
-            <button type="submit" class="w3-button w3-block w3-grey w3-margin-bottom">Send Message</button>
+            <button type="submit" class="w3-button w3-block w3-grey w3-margin-bottom">{{ i18n "contact_send"}}</button>
           </form>
         </div>
       </div>

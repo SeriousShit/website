@@ -1,26 +1,3 @@
-[homepage]
-other = "Домашняя страница"
-
-[prev]
-other = "Назад"
-
-[next]
-other = "Вперед"
-
-[top_of_baseof]
-other = "Верх baseof"
-
-[bottom_of_baseof]
-other = "Низ baseof"
-
-[sections]
-other = "Секции"
-
-[pages]
-other = "Страницы"
-
-
-
 [portfolio]
 other = "Portfolio"
 
@@ -33,3 +10,17 @@ other = "Blog"
 [contact]
 other = "Kontakt"
 
+[contact_me]
+other = "Kontaktanfrage"
+
+[contact_name]
+other = "Name"
+
+[contact_email]
+other = "Emailadresse"
+
+[contact_massage]
+other = "Nachricht"
+
+[contact_send]
+other = "Nachricht senden"

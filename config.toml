@@ -1,17 +1,63 @@
-title = "Serious Shit"
-baseURL = "hagen-hasenbalg.de"
+title = "Hagen Hasenbalg"
+baseURL = "/"
 tags = ["portfolio", "web design", "blog"]
-languageCode = "en-US"
 config = "config.toml"
 theme = "serious"
 disqusShortname = ""
 
-[languages]
+defaultContentLanguage = "en"
+
 [languages.en]
-weight = 1
+weight = 0
+languageName = "English"
+
+[[languages.en.menu.main]]
+    url    = "/"
+    name   = "Home"
+    weight = 5
+[[languages.en.menu.main]]
+    name = "portfolio"
+    url  = "/#portfolio"
+    weight = 1
+[[languages.en.menu.main]]
+    name = "about"
+    url  = "/#about"
+    weight = 2
+[[languages.en.menu.main]]
+    name = "blog"
+    url  = "/#blog"
+    weight = 3
+[[languages.en.menu.main]]
+    name = "contact"
+    url  = "/#contact"
+    weight = 4
+
 
 [languages.de]
-weight = 2
+weight = 10
+languageName = "Deutsch"
+
+[[languages.de.menu.main]]
+    url    = "/"
+    name   = "Home"
+    weight = 5
+[[languages.de.menu.main]]
+    name = "portfolio"
+    url  = "/#portfolio"
+    weight = 1
+[[languages.de.menu.main]]
+    name = "about"
+    url  = "/#about"
+    weight = 2
+[[languages.de.menu.main]]
+    name = "blog"
+    url  = "/#blog"
+    weight = 3
+[[languages.de.menu.main]]
+    name = "contact"
+    url  = "/#contact"
+    weight = 4
+
 
 
 [Params]
@@ -34,20 +80,5 @@ weight = 2
     cacheBustJS = false
     dateform = "02.01.2006"
 
-[[menu.main]]
-    name = "portfolio"
-    url  = "/#portfolio"
-    weight = 1
-[[menu.main]]
-    name = "about"
-    url  = "/#about"
-    weight = 2
-[[menu.main]]
-    name = "blog"
-    url  = "/#blog"
-    weight = 3
-[[menu.main]]
-    name = "contact"
-    url  = "/#contact"
-    weight = 4
+
 

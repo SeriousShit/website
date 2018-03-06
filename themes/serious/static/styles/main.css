@@ -101,3 +101,6 @@ a:link {
   right: 0px;
 }
 
+.i18n span + span::before {
+    content: " | ";
+}

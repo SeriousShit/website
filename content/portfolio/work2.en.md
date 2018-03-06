@@ -1,13 +1,13 @@
 +++
-image = "images/portfolio/label-clothes.jpg"
-showonlyimage = false
-date = "2016-11-05T19:57:40+05:30"
-title = "Name of the work 7"
+date = "2016-11-05T19:41:01+05:30"
+title = "Name of the work 2"
 draft = false
-weight = 7
+image = "images/portfolio/business-card-26.jpg"
+showonlyimage = false
+weight = 1
 +++
 
-Fifth abundantly made Give sixth hath. Cattle creature i be don't them.
+When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane.
 <!--more-->
 
 Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
