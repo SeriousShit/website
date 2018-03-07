@@ -13,24 +13,24 @@ languageName = "English"
 
 [[languages.en.menu.main]]
     url    = "/"
-    name   = "Home"
-    weight = 5
+    name   = "home"
+    weight = 1
 [[languages.en.menu.main]]
     name = "portfolio"
     url  = "/#portfolio"
-    weight = 1
+    weight = 2
 [[languages.en.menu.main]]
     name = "about"
     url  = "/#about"
-    weight = 2
+    weight = 3
 [[languages.en.menu.main]]
     name = "blog"
     url  = "/#blog"
-    weight = 3
+    weight = 4
 [[languages.en.menu.main]]
     name = "contact"
     url  = "/#contact"
-    weight = 4
+    weight = 5
 
 
 [languages.de]
@@ -39,24 +39,24 @@ languageName = "Deutsch"
 
 [[languages.de.menu.main]]
     url    = "/"
-    name   = "Home"
-    weight = 5
+    name   = "home"
+    weight = 1
 [[languages.de.menu.main]]
     name = "portfolio"
     url  = "/#portfolio"
-    weight = 1
+    weight = 2
 [[languages.de.menu.main]]
     name = "about"
     url  = "/#about"
-    weight = 2
+    weight = 3
 [[languages.de.menu.main]]
     name = "blog"
     url  = "/#blog"
-    weight = 3
+    weight = 4
 [[languages.de.menu.main]]
     name = "contact"
     url  = "/#contact"
-    weight = 4
+    weight = 5
 
 
 

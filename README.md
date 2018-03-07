@@ -1,6 +1,8 @@
-# website
+# my weblog
 
-## test
+![](./Screen-Shot.png)
+
+## Preview
 ```
 hugo server -D 
 ```
@@ -9,3 +11,4 @@ hugo server -D
 ```
 hugo
 ```
+
