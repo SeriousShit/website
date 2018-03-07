@@ -1,6 +1,11 @@
 {{ $url := .URL }}
 {{ range .AllTranslations }}
  	<span class="i18n">
- 		<a {{ if eq $url .URL }}class="active"{{ end }} href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+ 
+ 		{{ if eq $url .URL }}
+    		<span class="active">{{ .Language.LanguageName }}</span>
+		{{else}}
+    		<a href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+		{{ end }}
  	</span>
 {{ end }}

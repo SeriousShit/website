@@ -110,3 +110,7 @@ a:link {
   text-decoration: none; 
 }
 
+
+article img{
+  max-width: 100%
+}

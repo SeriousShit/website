@@ -15,7 +15,7 @@
                         <h5 class="w3-wide">
                             <a href="{{ .Permalink }}">{{ .Title }}</a>
                         </h5>
-                        {{ .Date.Format (.Site.Params.dateform | default "January 2006") }}
+                        {{ .Date.Format "January 2006" }}
                          <p>{{ .Summary }}</p>
                     </div>
                 </div>
