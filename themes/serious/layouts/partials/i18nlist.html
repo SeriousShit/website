@@ -1,15 +1,6 @@
-<!-- {{ range .Translations }}
-<li>
-    <a href="{{ .Permalink }}">{{ .Lang }}</a>
-</li>
-{{ end }} -->
-
-<div class="i18n">
-
-	{{ range .Translations }}
-	<span>
-		<a href="{{ .Permalink }}">{{ .Lang }}</a> 
-	</span>
-	{{ end }}
-</ul>
-
+{{ $url := .URL }}
+{{ range .AllTranslations }}
+ 	<span class="i18n">
+ 		<a {{ if eq $url .URL }}class="active"{{ end }} href="{{ .Permalink }}">{{ .Language.LanguageName }}</a>
+ 	</span>
+{{ end }}

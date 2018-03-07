@@ -101,6 +101,12 @@ a:link {
   right: 0px;
 }
 
-.i18n span + span::before {
+.i18n + .i18n::before {
     content: " | ";
 }
+
+.i18n .active {
+  border-bottom: 1px dashed #999;
+  text-decoration: none; 
+}
+
