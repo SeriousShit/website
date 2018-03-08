@@ -34,9 +34,14 @@
         <link rel="icon" type="image/png" sizes="16x16" href="/images/logo/favicon.ico">
         {{ end }}
         <link rel="canonical" href="{{ .Permalink }}">
+
+
         {{ if .RSSLink }}
-        <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}">
+          <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="feed including portfolio" />
         {{ end }}
+
+        <link href="/blog/index.xml" rel="feed" type="application/rss+xml" title="feed en" />
+        <link href="/de/blog/index.xml" rel="feed" type="application/rss+xml" title="feed en" />
 
         <link rel="stylesheet" href="/styles/w3.css" type="text/css">
         <link rel="stylesheet" href="/styles/main.css" type="text/css">
@@ -83,6 +88,9 @@
                 </a>
             {{ end }}
 
+            
+
+
             </br>
             </br>
             {{ if .Site.Params.github }}
@@ -107,13 +115,20 @@
 
             {{ partial "i18nlist.html" . }}
 
+            </br>
+            </br>
+
+<!--             <a href="{{ .Site.BaseURL }}{{ .Lang }}/blog/index.xml">
+                RSS
+            </a> -->
+
         </nav>
 
         <!-- Top menu on small screens -->
         <header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16" style="opacity: 0.95;">
             <span class="w3-left w3-padding w3-wide ddd">
                 <a href="/">
-                    <h2>{{ .Site.Title }}</h2>
+                    <h3>{{ .Site.Title }}</h3>
                 </a>
             </span>
             <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">
