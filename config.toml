@@ -12,52 +12,46 @@ DefaultContentLanguage = "en"
 weight = 1
 languageName = "English"
 
-[[languages.en.menu.main]]
-    url    = "/"
-    name   = "home"
-    weight = 1
+
 [[languages.en.menu.main]]
     name = "portfolio"
     url  = "/#portfolio"
-    weight = 2
+    weight = 1
 [[languages.en.menu.main]]
     name = "about"
     url  = "/#about"
-    weight = 3
+    weight = 2
 [[languages.en.menu.main]]
     name = "blog"
     url  = "/#blog"
-    weight = 4
+    weight = 3
 [[languages.en.menu.main]]
     name = "contact"
     url  = "/#contact"
-    weight = 5
+    weight = 4
 
 
 [languages.de]
 weight = 2
 languageName = "Deutsch"
 
-[[languages.de.menu.main]]
-    url    = "/"
-    name   = "home"
-    weight = 1
+
 [[languages.de.menu.main]]
     name = "portfolio"
     url  = "/#portfolio"
-    weight = 2
+    weight = 1
 [[languages.de.menu.main]]
     name = "about"
     url  = "/#about"
-    weight = 3
+    weight = 2
 [[languages.de.menu.main]]
     name = "blog"
     url  = "/#blog"
-    weight = 4
+    weight = 3
 [[languages.de.menu.main]]
     name = "contact"
     url  = "/#contact"
-    weight = 5
+    weight = 4
 
 
 

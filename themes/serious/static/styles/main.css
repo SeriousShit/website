@@ -114,3 +114,15 @@ a:link {
 article img{
   max-width: 100%
 }
+
+.w3-sidebar{
+  z-index:3;
+  width:300px;
+}
+
+@media (max-width:601px) {
+  .w3-sidebar{
+    width: 100%;
+  }
+}
+
