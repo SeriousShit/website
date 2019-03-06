@@ -4,12 +4,17 @@ date = "2017-06-27T17:39:21-07:00"
 draft = false
 +++
 
-<img src="/images/DSCF5604bw.JPG" alt="Me" class="w3-image w3-padding-32">
 
+<div class="w3-row">
+  <div class="w3-col s4">
+    <img src="/images/IMG_2528.jpg" alt="Person">
+  </div>
+  <div class="w3-col s8 w3-padding">
+  <h3>Hagen Hasenbalg</h3>
 
-### Hagen Hasenbalg
-
-Ich bin studierter Medieninformatiker. In den letzten Jahren habe ich mich vor allem auf die Programmierung von iOS Anwendungen und auf den Bereich des DevOps spezialisiert. Mein Augenmerk liegt dabei auf sauberen, einfach verständlichen und testbaren Code. 
+	Ich bin studierter Medieninformatiker. In den letzten Jahren habe ich mich vor allem auf die Programmierung von iOS Anwendungen und auf den Bereich des DevOps spezialisiert. Mein Augenmerk liegt dabei auf sauberen, einfach verständlichen und testbaren Code.
+  </div>
+</div>
 
 ---
 

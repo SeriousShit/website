@@ -4,12 +4,20 @@ date = "2017-06-27T17:39:21-07:00"
 draft = false
 +++
 
-<img src="/images/DSCF5604bw.JPG" alt="Me" class="w3-image w3-padding-32">
+<div class="w3-row">
+  <div class="w3-col s4">
+    <img src="/images/IMG_2528.jpg" alt="Person">
+  </div>
+  <div class="w3-col s8 w3-padding">
+
+<h3>Hagen Hasenbalg</h3>
+
+I'm a media informatics graduate. In the last few years I have specialized mainly in the programming of iOS applications and devOps. My focus is on clean, easy to understand and testable code.
+
+  </div>
+</div>
 
 
-### My Name
-
-I'm a media informatics graduate. In the last few years I have specialized mainly in the programming of iOS applications and devOps. My focus is on clean, easy to understand and testable code. 
 
 
 ---
